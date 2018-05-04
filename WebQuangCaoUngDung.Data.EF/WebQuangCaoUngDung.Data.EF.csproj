@@ -1,20 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <Folder Include="Configurations\" />
+    <Folder Include="Extentions\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
-    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\WebQuangCaoUngDung.Application\WebQuangCaoUngDung.Application.csproj" />
-    <ProjectReference Include="..\WebQuangCaoUngDung.Data.EF\WebQuangCaoUngDung.Data.EF.csproj" />
     <ProjectReference Include="..\WebQuangCaoUngDung.Data\WebQuangCaoUngDung.Data.csproj" />
     <ProjectReference Include="..\WebQuangCaoUngDung.Infrastructure\WebQuangCaoUngDung.Infrastructure.csproj" />
     <ProjectReference Include="..\WebQuangCaoUngDung.Utilities\WebQuangCaoUngDung.Utilities.csproj" />
